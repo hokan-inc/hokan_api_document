@@ -1,0 +1,14 @@
+{
+  "name": "redoc",
+  "version": "1.0.0",
+  "description": "open api document",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "redoc-cli bundle spec.yaml -o index.html"
+  },
+  "devDependencies": {
+    "redoc": "^2.0.0-rc.48",
+    "redoc-cli": "^0.10.3"
+  }
+}
