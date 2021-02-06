@@ -5,7 +5,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "redoc-cli bundle spec.yaml -o public/index.html --options.theme.colors.primary.main=#453590"
+    "build": "redoc-cli bundle spec.yaml -o public/index.html --options.theme.colors.primary.main=#453590",
+    "develop": "redoc-cli serve spec.yaml --watch"
   },
   "devDependencies": {
     "redoc": "^2.0.0-rc.48",
