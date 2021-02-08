@@ -3,8 +3,10 @@ info:
   $ref: ./info.yaml
 tags:
   $ref: ./tags.yaml
+servers:
+  - url: https://api.hokan.io/api/
 paths:
-  /v1/customers:
+  /customers:
     $ref: "./customers/index.yaml"
 security:
   - ApiKeyAuth: []
