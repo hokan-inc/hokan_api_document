@@ -9,4 +9,3 @@ paths:
   $ref: "./paths.yaml"
 components:
   $ref: "./components/index.yaml"
-
