@@ -5,8 +5,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "redoc-cli bundle spec.yaml -o public/index.html",
-    "develop": "redoc-cli serve spec.yaml --watch"
+    "build": "redoc-cli bundle spec/index.yaml -o public/index.html",
+    "develop": "redoc-cli serve spec/index.yaml --watch"
   },
   "dependencies": {
     "redoc-cli": "^0.10.3"
