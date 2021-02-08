@@ -1,0 +1,10 @@
+securitySchemes:
+  OAuth2: # <---- arbitrary name
+    type: oauth2
+    description: This API uses OAuth2
+    flows:
+      implicit: # <---- OAuth flow(authorizationCode, implicit, password or clientCredentials)
+        scopes:
+          # "read:customer": Read custoemr
+          create_customer: Create customer
+          # "update:customer": Update custoemr

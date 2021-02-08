@@ -1,15 +1,11 @@
 openapi: "3.0.0"
 info:
   $ref: ./info.yaml
-tags:
-  $ref: ./tags.yaml
 servers:
   - url: https://api.hokan.io/api/
+tags:
+  $ref: ./tags.yaml
 paths:
-  /customers:
-    $ref: "./customers/index.yaml"
-security:
-  - ApiKeyAuth: []
-  - OAuth2:
-      - read
-      - write
+  $ref: "./paths.yaml"
+components:
+  $ref: "./components.yaml"
