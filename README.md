@@ -2,7 +2,7 @@
 ## How to Start
 ### Start Server
 ```shell
-git clone https://github.com/Cohey0727/redoc-noob.git
+git clone https://github.com/hokan-inc/hokan_api_document.git
 cd redoc-noob
 yarn install
 yarn run develop
