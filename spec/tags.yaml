@@ -1,0 +1,6 @@
+- name: customer
+  description: Access to Customers
+- name: memo
+  description: Access to Memo
+- name: schedule
+  description: Access to Schedule
