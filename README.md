@@ -3,7 +3,7 @@
 ### Start Server
 ```shell
 git clone https://github.com/hokan-inc/hokan_api_document.git
-cd redoc-noob
+cd hokan_api_document
 yarn install
 yarn run develop
 ```
