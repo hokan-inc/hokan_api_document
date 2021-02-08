@@ -1,8 +1,8 @@
 post:
   security:
-    - OAuth2: [create_customer]
+    - OAuth2: [customers:create]
   tags:
-    - Customer
+    - Customers
   summary: Create Customer
   responses:
     "200":
