@@ -8,4 +8,5 @@ tags:
 paths:
   $ref: "./paths.yaml"
 components:
-  $ref: "./components.yaml"
+  $ref: "./components/index.yaml"
+

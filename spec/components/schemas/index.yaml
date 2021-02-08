@@ -1,0 +1,2 @@
+Customer:
+  $ref: customer.yaml

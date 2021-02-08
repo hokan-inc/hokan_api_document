@@ -4,6 +4,13 @@ post:
   tags:
     - Customers
   summary: Create Customer
+  description: Create a new customer
+  requestBody: # リクエストボディ
+    description: user to create
+    content:
+      application/json:
+        schema: # POSTするオブジェクト
+          $ref: "../components/schemas/customer.yaml"
   responses:
     "200":
       description: |-
