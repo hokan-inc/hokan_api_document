@@ -1,0 +1,39 @@
+allOf:
+  - $ref: "./common_customer.yaml"
+  - type: object
+    required:
+      - "last_name"
+    properties:
+      last_name:
+        type: "string"
+        description: "姓"
+      first_name:
+        type: "string"
+        description: "名"
+      last_name_kana:
+        type: "string"
+        description: "姓カナ"
+      first_name_kana:
+        type: "string"
+        description: "名カナ"
+      gender:
+        type: "number"
+        description: "性別(男:1, 女:2, その他:3)"
+      job:
+        type: "string"
+        description: "職業"
+      workplace:
+        type: "string"
+        description: "所属会社"
+      position:
+        type: "string"
+        description: "役職"
+      corporate_tel:
+        type: "string"
+        description: "会社電話番号"
+      corporate_email:
+        type: "string"
+        description: "会社Eメール"
+      corporate_mobile:
+        type: "string"
+        description: "会社電話番号"

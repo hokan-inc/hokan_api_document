@@ -1,0 +1,50 @@
+type: object
+properties:
+  id:
+    type: "number"
+    example: 12345678
+    description: "顧客ID"
+    readOnly: true
+  customer_type:
+    type: "string"
+    example: "individual"
+    description: "顧客タイプ(個人:individual, 法人:corporate)"
+  person_in_charge_id:
+    type: "number"
+    description: "担当者ユーザーID"
+  vice_person_in_charge_id:
+    type: "number"
+    description: "副担当者ユーザーID"
+  zip:
+    type: "string"
+    description: "郵便番号"
+    pattern: '^\d{3}-\d{4}'
+  address:
+    type: "string"
+    description: "住所"
+  address_kana:
+    type: "string"
+    description: "住所カナ"
+  tel:
+    type: "string"
+    description: "電話番号"
+  fax:
+    type: "string"
+    description: "FAX番号"
+  note:
+    type: "string"
+    description: "備考"
+  extra_values:
+    type: "array"
+    items:
+      type: "object"
+      required:
+        - "key"
+        - "value"
+      properties:
+        key:
+          type: "string"
+          description: "追加項目エイリアス"
+        value:
+          type: "string"
+          description: "追加項目値"

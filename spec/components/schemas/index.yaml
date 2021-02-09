@@ -1,2 +1,4 @@
-DetailCustomer:
-  $ref: ./customers/detail_customer.yaml
+IndividualCustomer:
+  $ref: ./customers/individual_customer.yaml
+CorporateCustomer:
+  $ref: ./customers/corporate_customer.yaml
