@@ -16,8 +16,9 @@ post:
             notification_users:
               type: "array"
               example: [123123123, 456456456, 789789789]
-              description: "通知対象のユーザー"
+              description: "通知対象のユーザーIDリスト"
             data:
+              description: "個人顧客データまたは、法人顧客データ"
               oneOf:
                 - $ref: "../components/schemas/customers/individual_customer.yaml"
                 - $ref: "../components/schemas/customers/corporate_customer.yaml"
@@ -30,6 +31,7 @@ post:
             type: object
             properties:
               data:
+                description: "個人顧客データまたは、法人顧客データ"
                 oneOf:
                   - $ref: "../components/schemas/customers/individual_customer.yaml"
                   - $ref: "../components/schemas/customers/corporate_customer.yaml"
