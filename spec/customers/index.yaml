@@ -17,6 +17,9 @@ post:
               type: "array"
               example: [123123123, 456456456, 789789789]
               description: "通知対象のユーザーIDリスト"
+            identify_same_person:
+              type: "boolean"
+              description: "名寄せ利用(する:true, しない:false)"
             data:
               description: "個人顧客データまたは、法人顧客データ"
               oneOf:
