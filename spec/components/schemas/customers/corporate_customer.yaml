@@ -23,7 +23,7 @@ allOf:
         type: "number"
         description: "従業員数"
       url:
-        type: "number"
+        type: "string"
         description: "会社URL"
       capital:
         type: "number"
@@ -35,11 +35,15 @@ allOf:
         type: "number"
         description: "税引利益"
       founded_date:
-        type: "number"
+        type: "string"
         description: "創業日"
+        example: '2020-01-31'
+        format: date
       established_date:
-        type: "number"
+        type: "string"
         description: "設立日"
+        example: '2020-01-31'
+        format: date
       listing:
         type: "number"
         description: "上場区分"
