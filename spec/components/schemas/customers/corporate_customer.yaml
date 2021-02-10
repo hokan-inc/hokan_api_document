@@ -10,3 +10,36 @@ allOf:
       compnay_name_kana:
         type: "string"
         description: "会社名カナ"
+      fiscal_month:
+        type: "number"
+        description: "決済月"
+      customer_in_charge:
+        type: "number"
+        description: "責任者名"
+      customer_in_charge_tel:
+        type: "number"
+        description: "責任者連絡先"
+      number_of_employee:
+        type: "number"
+        description: "従業員数"
+      url:
+        type: "number"
+        description: "会社URL"
+      capital:
+        type: "number"
+        description: "資本金(百万円)"
+      proceeds:
+        type: "number"
+        description: "売上高(百万円)"
+      net_profit:
+        type: "number"
+        description: "税引利益"
+      founded_date:
+        type: "number"
+        description: "創業日"
+      established_date:
+        type: "number"
+        description: "設立日"
+      listing:
+        type: "number"
+        description: "上場区分"
