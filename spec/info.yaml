@@ -1,8 +1,8 @@
 title: hokan API
 description: hokan API
-termsOfService: http://example.com/terms/
+termsOfService: https://www.hokan.io
 contact:
   name: hokan support
-  url: http://www.hkn.jp
+  url: https://www.hkn.jp
 version: 1.0.0
 
