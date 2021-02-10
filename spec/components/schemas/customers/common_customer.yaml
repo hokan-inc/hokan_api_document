@@ -31,6 +31,15 @@ properties:
   fax:
     type: "string"
     description: "FAX番号"
+  email:
+    type: "string"
+    description: "メールアドレス"
+  mobile:
+    type: "string"
+    description: "携帯電話"
+  mobile_email:
+    type: "string"
+    description: "携帯メールアドレス"
   note:
     type: "string"
     description: "備考"
