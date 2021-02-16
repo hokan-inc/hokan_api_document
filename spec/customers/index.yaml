@@ -1,6 +1,6 @@
 post:
   security:
-    - OAuth2: [customers:create]
+    - APIキー: [customers:create]
   tags:
     - Customers
   summary: Create Customer
