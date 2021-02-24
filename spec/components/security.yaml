@@ -26,3 +26,6 @@ OAuth2(Internal): # <---- arbitrary name
         customers:read: Read customer information
         customers:create: Create new customer
         customers:update: Modify customer information
+        schedules:read: Read schedule information
+        schedules:create: Create new schedule
+        schedules:update: Modify schedule information

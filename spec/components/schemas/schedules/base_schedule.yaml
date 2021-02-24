@@ -1,0 +1,15 @@
+type: object
+required:
+  - "title"
+properties:
+  id:
+    type: "number"
+    example: 12345678
+    description: "ID"
+    readOnly: true
+  title:
+    type: "string"
+    example: "タイトル"
+  content:
+    type: "string"
+    example: "内容"

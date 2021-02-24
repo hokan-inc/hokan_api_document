@@ -2,3 +2,5 @@ IndividualCustomer:
   $ref: ./customers/individual_customer.yaml
 CorporateCustomer:
   $ref: ./customers/corporate_customer.yaml
+Schedule:
+  $ref: ./schedules/schedule.yaml

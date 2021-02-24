@@ -6,6 +6,6 @@ servers:
 tags:
   $ref: ./tags.yaml
 paths:
-  $ref: "./paths.yaml"
+  $ref: "./paths/index.yaml"
 components:
   $ref: "./components/index.yaml"

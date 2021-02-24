@@ -1,6 +1,6 @@
 - name: Customers
   description: Access to Customers
-- name: Memo
+- name: Memos
   description: Access to Memo
 - name: Schedules
   description: Access to Schedule

@@ -23,8 +23,8 @@ post:
             data:
               description: "個人顧客データまたは、法人顧客データ"
               oneOf:
-                - $ref: "../components/schemas/customers/individual_customer.yaml"
-                - $ref: "../components/schemas/customers/corporate_customer.yaml"
+                - $ref: "../../components/schemas/customers/individual_customer.yaml"
+                - $ref: "../../components/schemas/customers/corporate_customer.yaml"
   responses:
     "200":
       description: 200 response
@@ -36,5 +36,5 @@ post:
               data:
                 description: "個人顧客データまたは、法人顧客データ"
                 oneOf:
-                  - $ref: "../components/schemas/customers/individual_customer.yaml"
-                  - $ref: "../components/schemas/customers/corporate_customer.yaml"
+                  - $ref: "../../components/schemas/customers/individual_customer.yaml"
+                  - $ref: "../../components/schemas/customers/corporate_customer.yaml"

@@ -1,0 +1,33 @@
+post:
+  security:
+    - APIキー: [schedules:create]
+  tags:
+    - Schedules
+  summary: Create Schedule
+  description: Create a new schedule
+  requestBody:
+    description: user to create
+    content:
+      application/json:
+        schema:
+          required:
+            - "data"
+          properties:
+            notification_users:
+              type: "array"
+              example: [123123123, 456456456, 789789789]
+              description: "通知対象のユーザーIDリスト"
+            data:
+              description: "スケジュールデータ"
+              $ref: "../../components/schemas/schedules/schedule.yaml"
+  responses:
+    "200":
+      description: 200 response
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              data:
+                description: "スケジュールデータ"
+                $ref: "../../components/schemas/schedules/schedule.yaml"
