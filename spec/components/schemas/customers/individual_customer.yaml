@@ -19,6 +19,27 @@ allOf:
       gender:
         type: "number"
         description: "性別(男:1, 女:2, その他:3)"
+      birthday:
+        type: "string"
+        description: "生年月日"
+        example: "1980-04-12"
+        format: date
+      annual_income:
+        type: "number"
+        description: "年収"
+        example: 5460000
+      savings:
+        type: "number"
+        description: "貯蓄"
+        example: 3200000
+      living_expenses:
+        type: "number"
+        description: "生活費"
+        example: 240000
+      industry:
+        type: "string"
+        description: "業種"
+        example: "1980-04-12"
       job:
         type: "string"
         description: "職業"
