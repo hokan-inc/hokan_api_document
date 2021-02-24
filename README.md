@@ -7,7 +7,7 @@ cd hokan_api_document
 yarn install
 yarn run develop
 ```
-and open http://localhost:8080
+and open http://localhost:9090
 ## How to build
 ```shell
 yarn run build
