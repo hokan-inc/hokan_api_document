@@ -11,7 +11,7 @@ post:
       application/json:
         schema:
           required:
-            - "data"
+            - data
           properties:
             notification_users:
               type: array

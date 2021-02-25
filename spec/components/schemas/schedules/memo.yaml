@@ -1,9 +1,6 @@
 allOf:
   - $ref: "./base_schedule.yaml"
   - type: object
-    required:
-      - start_at
-      - end_at
     properties:
       start_at:
         type: string
@@ -18,4 +15,4 @@ allOf:
         type: number
         description: "対応顧客"
         example: true
-  - $ref: "../../components/common/extra_values.yaml"
+  - $ref: "../../schemas/common/extra_values.yaml"

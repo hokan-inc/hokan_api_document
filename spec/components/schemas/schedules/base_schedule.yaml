@@ -1,6 +1,4 @@
 type: object
-required:
-  - "title"
 properties:
   id:
     type: number
