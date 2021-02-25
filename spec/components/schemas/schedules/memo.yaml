@@ -1,0 +1,21 @@
+allOf:
+  - $ref: "./base_schedule.yaml"
+  - type: object
+    required:
+      - start_at
+      - end_at
+    properties:
+      start_at:
+        type: string
+        format: datetime
+        description: "対応開始時刻"
+        example: "2020-03-04T12:00:00+09:00"
+      user_id:
+        type: number
+        description: "担当者"
+        example: true
+      customer_id:
+        type: number
+        description: "対応顧客"
+        example: true
+  - $ref: "../../components/common/extra_values.yaml"

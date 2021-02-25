@@ -4,3 +4,5 @@ CorporateCustomer:
   $ref: ./customers/corporate_customer.yaml
 Schedule:
   $ref: ./schedules/schedule.yaml
+Memo:
+  $ref: ./schedules/memo.yaml

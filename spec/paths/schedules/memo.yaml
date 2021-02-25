@@ -1,25 +1,25 @@
 post:
   security:
-    - APIキー: [schedules:create]
+    - APIキー: [memos:create]
   tags:
-    - Schedules
-  summary: Create Schedule
-  description: Create a new schedule
+    - Memos
+  summary: Create Memo
+  description: Create a new memo
   requestBody:
-    description: schedule create
+    description: memo create
     content:
       application/json:
         schema:
           required:
-            - data
+            - "data"
           properties:
             notification_users:
               type: array
               example: [123123123, 456456456, 789789789]
               description: "通知対象のユーザーIDリスト"
             data:
-              description: "予定データ"
-              $ref: "../../components/schemas/schedules/schedule.yaml"
+              description: "メモデータ"
+              $ref: "../../components/schemas/schedules/memo.yaml"
   responses:
     "200":
       description: 200 response
@@ -29,5 +29,5 @@ post:
             type: object
             properties:
               data:
-                description: "予定データ"
-                $ref: "../../components/schemas/schedules/schedule.yaml"
+                description: "メモデータ"
+                $ref: "../../components/schemas/schedules/memo.yaml"

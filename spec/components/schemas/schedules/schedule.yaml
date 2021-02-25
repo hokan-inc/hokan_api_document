@@ -23,7 +23,7 @@ allOf:
           type: number
       is_all_day:
         type: boolean
-        description: "全日のスケジュールか否か"
+        description: "全日の予定か否か"
         example: true
       place:
         type: string
@@ -31,9 +31,9 @@ allOf:
         example: true        
       customer_id:
         type: number
-        description: "スケジュール参加顧客"
+        description: "予定参加顧客"
         example: true
       color_code:
         type: string
-        description: "スケジュール色コード"
+        description: "予定色コード"
         example: true

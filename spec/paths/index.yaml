@@ -2,3 +2,5 @@
   $ref: "./customers/index.yaml"
 /schedules:
   $ref: "./schedules/schedule.yaml"
+/memos:
+  $ref: "./schedules/memo.yaml"
