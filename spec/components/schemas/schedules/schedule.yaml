@@ -28,12 +28,12 @@ allOf:
       place:
         type: string
         description: "場所情報"
-        example: true        
+        example: "東京"        
       customer_id:
         type: number
         description: "予定参加顧客"
-        example: true
+        example: 1234567
       color_code:
         type: string
         description: "予定色コード"
-        example: true
+        example: "#453590"
