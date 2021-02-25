@@ -10,9 +10,13 @@ allOf:
       user_id:
         type: number
         description: "担当者"
-        example: true
+        example: 1234567
       customer_id:
         type: number
         description: "対応顧客"
-        example: true
+        example: 1234567
+      extra_group_id:
+        type: number
+        description: "メモフォーマットID"
+        example: 123123123
   - $ref: "../../schemas/common/extra_values.yaml"
