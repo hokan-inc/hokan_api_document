@@ -3,13 +3,15 @@ required:
   - "title"
 properties:
   id:
-    type: "number"
+    type: number
     example: 12345678
     description: "ID"
     readOnly: true
   title:
-    type: "string"
+    type: string
     example: "タイトル"
+    description: "タイトル"
   content:
-    type: "string"
+    type: string
     example: "内容"
+    description: "内容"

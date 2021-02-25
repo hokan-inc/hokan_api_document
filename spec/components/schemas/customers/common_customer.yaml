@@ -1,81 +1,47 @@
-type: object
-properties:
-  id:
-    type: "number"
-    example: 12345678
-    description: "顧客ID"
-    readOnly: true
-  customer_type:
-    type: "string"
-    example: "individual"
-    description: "顧客タイプ(個人:individual, 法人:corporate)"
-  person_in_charge_id:
-    type: "number"
-    description: "担当者ユーザーID"
-  vice_person_in_charge_id:
-    type: "number"
-    description: "副担当者ユーザーID"
-  zip:
-    type: "string"
-    description: "郵便番号"
-    pattern: '^\d{3}-\d{4}'
-  address:
-    type: "string"
-    description: "住所"
-  address_kana:
-    type: "string"
-    description: "住所カナ"
-  tel:
-    type: "string"
-    description: "電話番号"
-  fax:
-    type: "string"
-    description: "FAX番号"
-  email:
-    type: "string"
-    description: "メールアドレス"
-  mobile:
-    type: "string"
-    description: "携帯電話"
-  mobile_email:
-    type: "string"
-    description: "携帯メールアドレス"
-  note:
-    type: "string"
-    description: "備考"
-  extra_values:
-    type: "array"
-    items:
-      type: "object"
-      required:
-        - "key"
-        - "value"
-      properties:
-        internal_key:
-          type: "string"
-          description: "追加項目内部キー"
-        value:
-          oneOf:
-            - type: number
-              description: "追加項目値(数値)"
-              example: 123
-            - type: date
-              description: "追加項目値(日付)"
-            - type: "datetime"
-              description: "追加項目値(日付時刻)"
-            - type: "string"
-              description: "追加項目値(文字列)"
-            - type: "string"
-              description: "追加項目値(複数行入力)"
-            - type: "string"
-              description: "追加項目値(セレクター)"
-            - type: "array"            
-              items:
-                description: "追加項目値(マルチセレクター)"
-                type: string
-            - type: "array"            
-              items:
-                description: "追加項目値(チェックボックス)"
-                type: string
-            - type: "string"
-              description: "追加項目値(ラジオボタン)"
+allOf:
+  - type: object
+    properties:
+      id:
+        type: number
+        example: 12345678
+        description: "顧客ID"
+        readOnly: true
+      customer_type:
+        type: string
+        example: "individual"
+        description: "顧客タイプ(個人:individual, 法人:corporate)"
+      person_in_charge_id:
+        type: number
+        description: "担当者ユーザーID"
+      vice_person_in_charge_id:
+        type: number
+        description: "副担当者ユーザーID"
+      zip:
+        type: string
+        description: "郵便番号"
+        pattern: '^\d{3}-\d{4}'
+      address:
+        type: string
+        description: "住所"
+      address_kana:
+        type: string
+        description: "住所カナ"
+      tel:
+        type: string
+        description: "電話番号"
+      fax:
+        type: string
+        description: "FAX番号"
+      email:
+        type: string
+        description: "メールアドレス"
+      mobile:
+        type: string
+        description: "携帯電話"
+      mobile_email:
+        type: string
+        description: "携帯メールアドレス"
+      note:
+        type: string
+        description: "備考"
+  - $ref: "../common/extra_values.yaml"

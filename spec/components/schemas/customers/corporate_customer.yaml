@@ -5,45 +5,45 @@ allOf:
       - "compnay_name"
     properties:
       compnay_name:
-        type: "string"
+        type: string
         description: "会社名"
       compnay_name_kana:
-        type: "string"
+        type: string
         description: "会社名カナ"
       fiscal_month:
-        type: "number"
+        type: number
         description: "決済月"
       customer_in_charge:
-        type: "number"
+        type: number
         description: "責任者名"
       customer_in_charge_tel:
-        type: "number"
+        type: number
         description: "責任者連絡先"
       number_of_employee:
-        type: "number"
+        type: number
         description: "従業員数"
       url:
-        type: "string"
+        type: string
         description: "会社URL"
       capital:
-        type: "number"
+        type: number
         description: "資本金(百万円)"
       proceeds:
-        type: "number"
+        type: number
         description: "売上高(百万円)"
       net_profit:
-        type: "number"
+        type: number
         description: "税引利益"
       founded_date:
-        type: "string"
+        type: string
         description: "創業日"
         example: '2020-01-31'
         format: date
       established_date:
-        type: "string"
+        type: string
         description: "設立日"
         example: '2020-01-31'
         format: date
       listing:
-        type: "number"
+        type: number
         description: "上場区分"

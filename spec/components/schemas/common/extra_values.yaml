@@ -1,0 +1,38 @@
+type objects:
+properties:
+  extra_values:
+    type: array
+    items:
+      type: "object"
+      required:
+        - "key"
+        - "value"
+      properties:
+        internal_key:
+          type: string
+          description: "追加項目内部キー"
+        value:
+          oneOf:
+            - type: number
+              description: "追加項目値(数値)"
+              example: 123
+            - type: date
+              description: "追加項目値(日付)"
+            - type: "datetime"
+              description: "追加項目値(日付時刻)"
+            - type: string
+              description: "追加項目値(文字列)"
+            - type: string
+              description: "追加項目値(複数行入力)"
+            - type: string
+              description: "追加項目値(セレクター)"
+            - type: array            
+              items:
+                description: "追加項目値(マルチセレクター)"
+                type: string
+            - type: array            
+              items:
+                description: "追加項目値(チェックボックス)"
+                type: string
+            - type: string
+              description: "追加項目値(ラジオボタン)"
