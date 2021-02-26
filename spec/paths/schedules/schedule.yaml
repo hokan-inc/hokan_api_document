@@ -1,6 +1,7 @@
 post:
   security:
-    - APIキー: [schedules:create]
+    - APIキー: []
+      OAuth2(Internal): [schedules:create]
   tags:
     - Schedules
   summary: Create Schedule

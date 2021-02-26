@@ -1,23 +1,27 @@
 APIキー:
   type: apiKey
   in: header
+  scheme: basic
   name: X-API-KEY
   description: |
-    本APIを実行するにあたり、トークンをヘッダに付与しなければ実行ができません.
+    本APIを実行するにあたり、トークンをAPI Keyとしてヘッダに付与しなければ実行ができません。
 
     トークンは、hokan設定画面の「トークン発行機能」から発行することができます。
     
-    APIを実行するごとにヘッダにトークンを付与しなければ、不正なアクセスとみなされAPIの実行ができません。
-  
+    毎回の実行に対しトークンを付与しなければ、不正なアクセスとみなされAPIの実行ができません。
+
+    なお、サーバー側ではBasic認証として処理する為、下記の形式でトークンを送付します。
+
+    `X-API-KEY: Basic <API Key>`
 
 OAuth2(Internal): # <---- arbitrary name
   type: oauth2
   description: |
-    本APIは権限管理処理を実現するために、内部的にOAuth2のスキームで権限管理を行います.
+    本APIは権限管理処理を実現するために、内部的にOAuth2のスキームで権限管理を行います。
 
-    認証処理には上記のAPIキーを使用しますが、トークン発行時に事前にAPI権限を付与した上で発行しなければなりません.
+    権限の判定を行う前に認証処理を行い、上記のAPIキーを使用します。
     
-    APIを実行する場合、必要な権限を持ったトークンを使用しなければ、権限不足のためエラーが発生します。
+    発行時、下記の権限のうち適切なものをトークンに付与した上で発行しなければ、APIを実行時に権限不足のためエラーが発生します。
   flows:
     authorizationCode:
       authorizationUrl: N/A
@@ -29,3 +33,6 @@ OAuth2(Internal): # <---- arbitrary name
         schedules:read: Read schedule information
         schedules:create: Create new schedule
         schedules:update: Modify schedule information
+        memoes:read: Read memo information
+        memoes:create: Create new memo
+        memoes:update: Modify memo information
