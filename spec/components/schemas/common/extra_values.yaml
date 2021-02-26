@@ -1,12 +1,12 @@
-type objects:
+type: object
 properties:
   extra_values:
     type: array
     items:
-      type: "object"
+      type: object
       required:
-        - "key"
-        - "value"
+        - internal_key
+        - value
       properties:
         internal_key:
           type: string
@@ -16,10 +16,12 @@ properties:
             - type: number
               description: "追加項目値(数値)"
               example: 123
-            - type: date
+            - type: string
               description: "追加項目値(日付)"
-            - type: "datetime"
+              format: date
+            - type: string
               description: "追加項目値(日付時刻)"
+              format: datetime
             - type: string
               description: "追加項目値(文字列)"
             - type: string
