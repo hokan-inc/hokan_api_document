@@ -5,7 +5,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "redoc-cli bundle spec/index.yaml -o public/index.html --options.theme.colors.primary.main=#453590 & speccy resolve spec/index.yaml -o public/openapi.yaml",
+    "build": "mkdir public && redoc-cli bundle spec/index.yaml -o public/index.html --options.theme.colors.primary.main=#453590 && speccy resolve spec/index.yaml -o public/openapi.yaml",
     "develop": "redoc-cli serve spec/index.yaml --watch -p 9090"
   },
   "dependencies": {
