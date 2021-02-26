@@ -33,6 +33,6 @@ OAuth2(Internal): # <---- arbitrary name
         schedules:read: Read schedule information
         schedules:create: Create new schedule
         schedules:update: Modify schedule information
-        memoes:read: Read memo information
-        memoes:create: Create new memo
-        memoes:update: Modify memo information
+        memos:read: Read memo information
+        memos:create: Create new memo
+        memos:update: Modify memo information

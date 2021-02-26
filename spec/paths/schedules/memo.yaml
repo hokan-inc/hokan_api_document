@@ -1,7 +1,7 @@
 post:
   security:
     - APIキー: []
-      OAuth2(Internal): [memoes:create]
+      OAuth2(Internal): [memos:create]
   tags:
     - Memos
   summary: Create Memo
