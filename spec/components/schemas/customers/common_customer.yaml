@@ -20,27 +20,35 @@ allOf:
         type: string
         description: "郵便番号"
         pattern: '^\d{3}-\d{4}'
+        example: "100-0000"
       address:
         type: string
         description: "住所"
+        example: "東京都千代田区1丁目1番地"
       address_kana:
         type: string
         description: "住所カナ"
+        example: "トウキョウトチヨダクイッチョウメイチバンチ"
       tel:
         type: string
         description: "電話番号"
+        example: "090-0123-4567"
       fax:
         type: string
         description: "FAX番号"
+        example: "090-0123-4567"
       email:
         type: string
         description: "メールアドレス"
+        example: "email@example.com"
       mobile:
         type: string
         description: "携帯電話"
+        example: "090-0123-4567"
       mobile_email:
         type: string
         description: "携帯メールアドレス"
+        example: "mobile@example.com"
       note:
         type: string
         description: "備考"

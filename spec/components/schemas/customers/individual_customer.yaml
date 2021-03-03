@@ -7,18 +7,23 @@ allOf:
       last_name:
         type: string
         description: "姓"
+        example: "保険"
       first_name:
         type: string
         description: "名"
+        example: "太郎"
       last_name_kana:
         type: string
         description: "姓カナ"
+        example: "ホケン"
       first_name_kana:
         type: string
         description: "名カナ"
+        example: "タロウ"
       gender:
         type: number
         description: "性別(男:1, 女:2, その他:3)"
+        example: 1
       birthday:
         type: string
         description: "生年月日"
@@ -39,22 +44,28 @@ allOf:
       industry:
         type: string
         description: "業種"
-        example: "1980-04-12"
+        example: "金融・保険業"
       job:
         type: string
         description: "職業"
+        example: "営業"
       workplace:
         type: string
         description: "所属会社"
+        example: "株式会社hokan"
       position:
         type: string
         description: "役職"
+        example: "専務取締役"
       corporate_tel:
         type: string
         description: "会社電話番号"
+        example: "090-0123-4567"
       corporate_email:
         type: string
         description: "会社Eメール"
+        example: "corporate@example.com"
       corporate_mobile:
         type: string
         description: "会社電話番号"
+        example: "090-0123-4567"
