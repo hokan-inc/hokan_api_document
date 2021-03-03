@@ -12,4 +12,5 @@ and open http://localhost:9090
 ```shell
 yarn run build
 ```
+
 `public` is output directory

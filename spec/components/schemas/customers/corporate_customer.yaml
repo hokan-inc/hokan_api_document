@@ -2,12 +2,12 @@ allOf:
   - $ref: "./common_customer.yaml"
   - type: object
     required:
-      - "compnay_name"
+      - "company_name"
     properties:
-      compnay_name:
+      company_name:
         type: string
         description: "会社名"
-      compnay_name_kana:
+      company_name_kana:
         type: string
         description: "会社名カナ"
       fiscal_month:
