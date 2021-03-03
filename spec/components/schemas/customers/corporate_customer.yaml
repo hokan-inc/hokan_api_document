@@ -2,48 +2,59 @@ allOf:
   - $ref: "./common_customer.yaml"
   - type: object
     required:
-      - "company_name"
+      - company_name
     properties:
       company_name:
         type: string
         description: "会社名"
+        example: "株式会社hokan"
       company_name_kana:
         type: string
         description: "会社名カナ"
+        example: "カブシキガイシャホカン"
       fiscal_month:
         type: number
         description: "決済月"
+        example: 6
       customer_in_charge:
         type: number
         description: "責任者名"
+        example: "保険太郎"
       customer_in_charge_tel:
         type: number
         description: "責任者連絡先"
+        example: "090-0123-4567"
       number_of_employee:
         type: number
         description: "従業員数"
+        example: 20
       url:
         type: string
         description: "会社URL"
+        example: "https://hkn.jp"
       capital:
         type: number
         description: "資本金(百万円)"
+        example: 1000
       proceeds:
         type: number
         description: "売上高(百万円)"
+        example: 2000
       net_profit:
         type: number
         description: "税引利益"
+        example: 500
       founded_date:
         type: string
         description: "創業日"
-        example: '2020-01-31'
+        example: "2020-01-31"
         format: date
       established_date:
         type: string
         description: "設立日"
-        example: '2020-01-31'
+        example: "2020-01-31"
         format: date
       listing:
         type: number
-        description: "上場区分"
+        description: "上場区分(非上場:1, 上場:2)"
+        example: 1
