@@ -2,7 +2,7 @@ openapi: "3.0.3"
 info:
   $ref: ./info.yaml
 servers:
-  - url: https://api.hokan.io/api/
+  - url: https://api.hokan.io//api/ext/v1/
 tags:
   $ref: ./tags.yaml
 paths:
