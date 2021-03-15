@@ -1,0 +1,57 @@
+allOf:
+  - type: object
+    required:
+      - "customer_type"
+    properties:
+      id:
+        type: number
+        example: 12345678
+        description: "顧客ID"
+        readOnly: true
+      customer_type:
+        type: string
+        example: "individual"
+        description: "顧客タイプ(個人:individual, 法人:corporation)"
+      person_in_charge_id:
+        type: number
+        description: "担当者ユーザーID"
+      vice_person_in_charge_id:
+        type: number
+        description: "副担当者ユーザーID"
+      zip:
+        type: string
+        description: "郵便番号"
+        pattern: '^\d{3}-\d{4}'
+        example: "100-0000"
+      address:
+        type: string
+        description: "住所"
+        example: "東京都千代田区1丁目1番地"
+      address_kana:
+        type: string
+        description: "住所カナ"
+        example: "トウキョウトチヨダクイッチョウメイチバンチ"
+      tel:
+        type: string
+        description: "電話番号"
+        example: "090-0123-4567"
+      fax:
+        type: string
+        description: "FAX番号"
+        example: "090-0123-4567"
+      email:
+        type: string
+        description: "メールアドレス"
+        example: "email@example.com"
+      mobile:
+        type: string
+        description: "携帯電話"
+        example: "090-0123-4567"
+      mobile_email:
+        type: string
+        description: "携帯メールアドレス"
+        example: "mobile@example.com"
+      note:
+        type: string
+        description: "備考"
+  - $ref: "../common/extra_values.yaml"
