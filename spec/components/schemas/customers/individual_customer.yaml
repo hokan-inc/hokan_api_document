@@ -57,15 +57,15 @@ allOf:
         type: string
         description: "役職"
         example: "専務取締役"
-      corporate_tel:
+      corporation_tel:
         type: string
         description: "会社電話番号"
         example: "090-0123-4567"
-      corporate_email:
+      corporation_email:
         type: string
         description: "会社Eメール"
-        example: "corporate@example.com"
-      corporate_mobile:
+        example: "corporation@example.com"
+      corporation_mobile:
         type: string
         description: "会社電話番号"
         example: "090-0123-4567"

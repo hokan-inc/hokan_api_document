@@ -11,7 +11,7 @@ allOf:
       customer_type:
         type: string
         example: "individual"
-        description: "顧客タイプ(個人:individual, 法人:corporate)"
+        description: "顧客タイプ(個人:individual, 法人:corporation)"
       person_in_charge_id:
         type: number
         description: "担当者ユーザーID"
