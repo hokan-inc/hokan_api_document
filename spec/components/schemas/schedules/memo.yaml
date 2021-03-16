@@ -19,7 +19,7 @@ allOf:
         type: number
         description: "対応顧客"
         example: 1234567
-      extra_group_id:
+      extra_item_group_id:
         type: number
         description: "メモフォーマットID"
         example: 123123123
